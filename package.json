@@ -1,6 +1,6 @@
 {
   "name": "htmlpdfcontent",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "gerador de pdf",
   "main": "index.js",
   "scripts": {
