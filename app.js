@@ -1,7 +1,7 @@
 const express = require("express");
 
 const handlebars = require("handlebars");
-const scrap = require("./createHtmlPdfContent");
+const createHtmlPdfContent = require("./createHtmlPdfContent");
 const app = express();
 const port = 3099;
 // import path from "path";
@@ -33,7 +33,10 @@ app.get("/", async (req, res) => {
     fullname: "hello everyone",
   };
 
-  const { html, pdf, ...rest } = await scrap(templateData, templateSource);
+  const { html, pdf, ...rest } = await createHtmlPdfContent(
+    templateData,
+    templateSource
+  );
 
   res.send(data);
 });
