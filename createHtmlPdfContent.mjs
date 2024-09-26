@@ -1,9 +1,10 @@
-const { Builder, By, until } = require("selenium-webdriver");
-const handlebars = require("handlebars");
-const path = require("path");
-const fs = require("fs/promises");
-const chrome = require("selenium-webdriver/chrome");
-const pdf = require("html-pdf");
+import { Builder, By, until } from "selenium-webdriver";
+import handlebars from "handlebars";
+import path from "path";
+import fs from "fs/promises";
+import chrome from "selenium-webdriver/chrome.js"; // Add .js extension
+
+import pdf from "html-pdf";
 
 const generatePdfWithSelenium = async (templateData, fileSource) => {
   try {
@@ -86,4 +87,4 @@ const generatePdfWithSelenium = async (templateData, fileSource) => {
   }
 };
 
-module.exports = generatePdfWithSelenium;
+export default generatePdfWithSelenium;

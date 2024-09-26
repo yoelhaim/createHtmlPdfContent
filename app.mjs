@@ -1,15 +1,12 @@
-const express = require("express");
+// const express = require("express");
 
-const handlebars = require("handlebars");
-const createHtmlPdfContent = require("./createHtmlPdfContent");
+// const handlebars = require("handlebars");
+// const createHtmlPdfContent = require("./createHtmlPdfContent.mjs");
+import express from "express";
+import createHtmlPdfContent from "./createHtmlPdfContent.mjs";
+
 const app = express();
 const port = 3099;
-// import path from "path";
-// import fs from "fs/promises";
-const path = require("path");
-const fs = require("fs/promises");
-
-const pdf = require("html-pdf");
 
 app.get("/", async (req, res) => {
   const templateSource = `./file.html`;
