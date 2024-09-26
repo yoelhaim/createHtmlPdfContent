@@ -1,0 +1,7 @@
+.DS_Store
+*.pdf
+
+node_modules/
+.git/
+logs/
+dist/
