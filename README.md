@@ -22,13 +22,13 @@ This project generates customized PDFs from HTML templates using **Handlebars**.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/yourrepository.git
+   git clone https://github.com/yoelhaim/htmlpdfcontent.git
    ```
 
 2. Navigate to the project folder:
 
    ```bash
-   cd yourrepository
+   cd htmlpdfcontent
    ```
 
 3. Install the dependencies:
